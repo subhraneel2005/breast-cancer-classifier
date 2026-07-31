@@ -32,6 +32,7 @@ breast-cancer-classifier/
 ├── breast_cancer_metrics.ipynb   # The main notebook (run this)
 ├── Explainer.md                  # In-depth explanations of every concept
 ├── README.md                     # This file
+├── requirements.txt              # Pinned dependencies (pip alternative)
 ├── pyproject.toml                # Project metadata and dependencies
 ├── uv.lock                       # Locked dependency versions
 └── .python-version               # Python version pin (3.12)
@@ -62,6 +63,14 @@ installs everything you need:
 - `numpy`
 - `pandas`
 - `scikit-learn`
+
+Prefer plain `pip`? The pinned `requirements.txt` is equivalent:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+```
 
 ## Running the Notebook
 
